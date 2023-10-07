@@ -3,9 +3,46 @@ body{
     font : normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(29, 172, 182);
+    background-color: rgb(144, 211, 216);
 }
 h2{
-    color: #f02;
+    color: rgb(14, 2, 2);
     font-size: 2em;
+}
+header{
+   background-color : hsl(289, 78%, 74%);
+}
+main{
+    float: left;
+    width :  65vw;
+    height : 60vh;
+    background-color: rgb(235, 165, 130);
+}
+aside{
+    float: right;
+    width : 25vw;
+    height : 60vh;
+    background-color: rgb(223, 197, 113);
+}
+footer{
+    clear : both; 
+    background-color: rgb(166, 66, 238);
+}
+.structural{
+    margin :10px;
+    padding :10px;
+    border : 2px solid black;
+}
+#para1{
+    color : rgb(109, 4, 54);
+
+}
+#para2{
+    color : rgb(24, 61, 196);
+}
+a:hover{
+    color : rgb(41, 2, 7);
+}
+footer P{
+    font-size: .75em;
 }
