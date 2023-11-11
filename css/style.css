@@ -5,44 +5,135 @@ body{
     height: 100vh;
     background-color: rgb(144, 211, 216);
 }
-h2{
-    color: rgb(14, 2, 2);
+h1{
+    color: aqua; 
     font-size: 2em;
 }
-header{
-   background-color : hsl(289, 78%, 74%);
+
+
+aside li { list-style-type: square;
+    line-height: 2em;
+    display: inline;
+    list-style: none;
+   
 }
-main{
-    float: left;
-    width :  65vw;
-    height : 60vh;
-    background-color: rgb(235, 165, 130);
-}
-aside{
-    float: right;
-    width : 25vw;
-    height : 60vh;
-    background-color: rgb(223, 197, 113);
-}
-footer{
-    clear : both; 
-    background-color: rgb(166, 66, 238);
-}
-.structural{
-    margin :10px;
-    padding :10px;
-    border : 2px solid black;
-}
-#para1{
-    color : rgb(109, 4, 54);
+aside a{
+    color: rgb(57, 191, 88);
+    border: solid 2px;
+    border-color:indigo;
+    background-color: cornsilk;
+    color: indigo;
+  
 
 }
-#para2{
-    color : rgb(24, 61, 196);
+
+form {
+    border: 5px dashed  brown;
+    padding: 5px;
+}
+
+button{
+
+ width: 50%;
+ display: block;
+ height: 2em;
+}
+
+[text]{
+    width: 50%;
+    display: block;
+    height: 50em;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+}
+nav ul li a {
+    color: indigo;
+    border: 2px solid indigo;
+    text-decoration: none;
+    background-color: cornsilk;
+    padding: 5px;
+}
+nav ul li a:hover{
+    border-color: cornsilk;
+    color: cornsilk;
+    background-color: indigo;
+}
+input[type=text],input[type=email],input[submit],selection, option{
+display: block;
+width: 50%;
+height: 2em;
+}
+input[type=radio],input[type=checkbox]{
+    height: 2em;
+    width: 2em;
+}
+select,option,label,legend,input[type=submit]{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-variant: small-caps
+}
+textarea{
+    display: block;
+    width: 50%;
+}
+
+fieldset{
+    border: none;
+}
+
+body {
+    font: normal normal normal 12px/1.5;
+    background-color: hsla(268, 68%, 70%, 68%);
+    width: 100vw;
+    height: 100vh;
+}
+h2 {
+    color: #f02;
+    font-size: 2em;
+}
+
+header{
+    background-color: hsl(200, 78%, 34%);
+}
+
+main {
+    float:left;
+    width:65vw;
+    background-color: hsl(109, 84%, 47%);
+
+}
+
+aside {
+    float:right;
+    width:25vw;
+    background-color: hsl(343, 85%, 26%);
+}
+
+aside a:hover{
+    color: #f02;
+}
+footer{
+    clear:both;
+    background-color: hsl(243, 73%, 62%);
+}
+.structural {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+#para1{
+    color:rgb(11, 74, 11);
+}
+#para2 {
+    color: rgb(18, 95, 70);
 }
 a:hover{
-    color : rgb(41, 2, 7);
+    color: #f02;
 }
-footer P{
-    font-size: .75em;
+footer p{
+    font-size: -75em;
 }
