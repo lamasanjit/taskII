@@ -1,13 +1,17 @@
 /*sanjit Thokar 8916967*/
+html{
+    font: nnormal normal normal 20px/1.5 arial,helvetica, sans-serif;
+}
 body{
-    font : normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
     background-color: rgb(144, 211, 216);
+    display:flex;
+    flex-direction:column;
 }
 h1{
     color: aqua; 
-    font-size: 2em;
+    font-size: 2.5rem;
 }
 
 
@@ -17,6 +21,8 @@ aside li { list-style-type: square;
     list-style: none;
    
 }
+    
+
 aside a{
     color: rgb(57, 191, 88);
     border: solid 2px;
@@ -54,7 +60,7 @@ nav ul li a {
     border: 2px solid indigo;
     text-decoration: none;
     background-color: cornsilk;
-    padding: 5px;
+    padding: 1em;
 }
 nav ul li a:hover{
     border-color: cornsilk;
@@ -79,7 +85,14 @@ textarea{
     display: block;
     width: 50%;
 }
+section{
+    	Display: flex;
+	Flex-direction: row;
+   Flex-wrap: nowrap;
+	Justify-content: space;
+	Align-items: stretch;
 
+}
 fieldset{
     border: none;
 }
@@ -100,15 +113,13 @@ header{
 }
 
 main {
-    float:left;
-    width:65vw;
+   flex: 2 1 70%;
     background-color: hsl(109, 84%, 47%);
 
 }
 
 aside {
-    float:right;
-    width:25vw;
+    flex:1 1 30%;
     background-color: hsl(343, 85%, 26%);
 }
 
@@ -116,12 +127,12 @@ aside a:hover{
     color: #f02;
 }
 footer{
-    clear:both;
+    
     background-color: hsl(243, 73%, 62%);
 }
 .structural {
     padding: 10px;
-    margin: 10px;
+    margin: 1rem;
     border: 2px solid black;
 }
 
@@ -136,4 +147,31 @@ a:hover{
 }
 footer p{
     font-size: -75em;
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+ figure{
+    border: 0.1em solid black;
+
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+@media (max-width:600px){
+    html{
+        font-size:10px;
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    section{
+        display:block;
+    }
 }
